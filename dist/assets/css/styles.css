@@ -123,7 +123,6 @@ button {
   width: 58px;
   height: 38px;
   flex: 0 0 auto;
-  overflow: hidden;
 }
 
 .brand-symbol img {
@@ -133,8 +132,29 @@ button {
   width: 74px;
   max-width: none;
   height: 74px;
+  filter:
+    drop-shadow(0 0 1px rgba(255, 255, 255, 0.92))
+    drop-shadow(0 0 8px rgba(67, 166, 255, 0.42));
   object-fit: contain;
   transform: translate(-50%, -50%);
+}
+
+.site-header .brand {
+  gap: 12px;
+}
+
+.site-header .brand-symbol {
+  width: 72px;
+  height: 46px;
+}
+
+.site-header .brand-symbol img {
+  width: 92px;
+  height: 92px;
+}
+
+.site-header .brand-word {
+  font-size: 1.28rem;
 }
 
 .brand-copy {
