@@ -113,42 +113,34 @@ button {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: var(--white);
   text-decoration: none;
 }
 
-.brand-mark {
+.brand-symbol {
   position: relative;
-  width: 34px;
-  height: 34px;
+  width: 58px;
+  height: 38px;
   flex: 0 0 auto;
-  border: 1px solid rgba(112, 198, 255, 0.72);
-  border-radius: 8px;
-  background: linear-gradient(145deg, rgba(25, 140, 255, 0.22), rgba(80, 215, 232, 0.04));
-  box-shadow: inset 0 0 18px rgba(25, 140, 255, 0.18);
+  overflow: hidden;
 }
 
-.brand-mark::before,
-.brand-mark::after {
+.brand-symbol img {
   position: absolute;
-  content: "";
-  background: linear-gradient(90deg, var(--blue-400), var(--cyan-400));
-  transform: skewX(-28deg);
+  top: 50%;
+  left: 50%;
+  width: 74px;
+  max-width: none;
+  height: 74px;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
 }
 
-.brand-mark::before {
-  top: 9px;
-  left: 8px;
-  width: 18px;
-  height: 3px;
-}
-
-.brand-mark::after {
-  right: 8px;
-  bottom: 9px;
-  width: 18px;
-  height: 3px;
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .brand-word {
@@ -156,6 +148,15 @@ button {
   font-weight: 830;
   letter-spacing: 0.17em;
   line-height: 1;
+}
+
+.brand-tagline {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 0.5rem;
+  font-weight: 680;
+  letter-spacing: 0.22em;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .site-nav {
