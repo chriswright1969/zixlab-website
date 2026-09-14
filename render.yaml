@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: zixlab-website
+    runtime: static
+    buildCommand: echo "No build required"
+    staticPublishPath: ./dist
+    autoDeployTrigger: commit
+    domains:
+      - zixlab.co.uk
+      - zixlabs.co.uk
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: camera=(), microphone=(), geolocation=()
