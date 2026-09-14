@@ -160,7 +160,7 @@ button {
 .brand-copy {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .brand-word {
@@ -175,7 +175,7 @@ button {
   font-size: 0.5rem;
   font-weight: 680;
   letter-spacing: 0.22em;
-  line-height: 1;
+  line-height: 1.25;
   text-transform: uppercase;
 }
 
