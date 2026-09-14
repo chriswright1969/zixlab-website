@@ -160,7 +160,7 @@ button {
 .brand-copy {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .brand-word {
@@ -171,11 +171,13 @@ button {
 }
 
 .brand-tagline {
-  color: rgba(255, 255, 255, 0.64);
-  font-size: 0.5rem;
-  font-weight: 680;
+  display: block;
+  padding: 2px 0 3px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.56rem;
+  font-weight: 650;
   letter-spacing: 0.22em;
-  line-height: 1.25;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
