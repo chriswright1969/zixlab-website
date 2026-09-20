@@ -697,6 +697,10 @@ button {
   grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
 }
 
+.product-feature + .product-feature {
+  margin-top: 38px;
+}
+
 .product-panel {
   position: relative;
   overflow: hidden;
@@ -774,6 +778,44 @@ button {
   height: 2px;
   background: var(--blue-400);
   box-shadow: 0 0 15px var(--blue-400);
+  content: "";
+}
+
+.sqc-glyph {
+  position: relative;
+  display: grid;
+  width: 94px;
+  height: 94px;
+  place-items: center;
+  border: 4px solid rgba(255, 255, 255, 0.92);
+  border-radius: 25px;
+  color: var(--white);
+  background: linear-gradient(145deg, rgba(25, 140, 255, 0.45), rgba(80, 215, 232, 0.08));
+  box-shadow:
+    0 0 28px rgba(25, 140, 255, 0.32),
+    inset 0 0 22px rgba(80, 215, 232, 0.12);
+  font-size: 1.3rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-indent: 0.12em;
+}
+
+.sqc-glyph::before {
+  position: absolute;
+  inset: -13px;
+  border: 1px solid rgba(80, 215, 232, 0.42);
+  border-radius: 34px;
+  content: "";
+}
+
+.sqc-glyph::after {
+  position: absolute;
+  right: 15px;
+  bottom: 14px;
+  left: 15px;
+  height: 2px;
+  background: var(--cyan-400);
+  box-shadow: 0 0 10px var(--cyan-400);
   content: "";
 }
 
@@ -1069,6 +1111,11 @@ button {
   background: var(--white);
   box-shadow: var(--shadow);
   grid-template-columns: minmax(300px, 0.7fr) minmax(0, 1.3fr);
+  scroll-margin-top: 24px;
+}
+
+.product-detail + .product-detail {
+  margin-top: 46px;
 }
 
 .product-detail-identity {
