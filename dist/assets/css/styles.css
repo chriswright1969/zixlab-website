@@ -113,7 +113,7 @@ button {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
   color: var(--white);
   text-decoration: none;
 }
@@ -140,7 +140,7 @@ button {
 }
 
 .site-header .brand {
-  gap: 12px;
+  gap: 18px;
 }
 
 .site-header .brand-symbol {
