@@ -1410,6 +1410,112 @@ a.contact-card:hover {
   font-weight: 660;
 }
 
+
+.policy-layout {
+  display: grid;
+  align-items: start;
+  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 1fr);
+  gap: clamp(42px, 7vw, 86px);
+}
+
+.policy-summary {
+  position: sticky;
+  top: 28px;
+  padding: 30px;
+  border: 1px solid var(--line-light);
+  border-radius: var(--radius-md);
+  background: #f8fbfe;
+}
+
+.policy-summary h2 {
+  margin: 18px 0 12px;
+  color: var(--ink-900);
+  font-size: 1.65rem;
+  letter-spacing: -0.035em;
+}
+
+.policy-summary > p {
+  margin: 0;
+  color: var(--muted-dark);
+  font-size: 0.94rem;
+}
+
+.policy-meta {
+  margin: 28px 0 0;
+  border-top: 1px solid var(--line-light);
+}
+
+.policy-meta div {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line-light);
+}
+
+.policy-meta dt {
+  color: var(--muted-dark);
+  font-size: 0.74rem;
+  font-weight: 720;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.policy-meta dd {
+  margin: 4px 0 0;
+  color: var(--ink-800);
+  font-size: 0.9rem;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.policy-content {
+  overflow: hidden;
+  border: 1px solid var(--line-light);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: 0 20px 55px rgba(2, 12, 28, 0.08);
+}
+
+.policy-section {
+  padding: 34px clamp(28px, 5vw, 52px);
+  border-bottom: 1px solid var(--line-light);
+}
+
+.policy-section:last-child {
+  border-bottom: 0;
+}
+
+.policy-section h2 {
+  margin: 0 0 15px;
+  color: var(--ink-900);
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  letter-spacing: -0.03em;
+}
+
+.policy-section p {
+  margin: 0 0 15px;
+  color: #40566b;
+}
+
+.policy-section p:last-child {
+  margin-bottom: 0;
+}
+
+.policy-section a,
+.privacy-link a {
+  color: #0c6ec4;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.policy-contact {
+  background: #f8fbfe;
+}
+
+.privacy-link {
+  margin: 20px 0 0;
+  font-size: 0.9rem;
+}
+
 .site-footer {
   padding: 66px 0 30px;
   color: #c0cfdd;
@@ -1573,7 +1679,8 @@ a.contact-card:hover {
 
   .section-heading,
   .story-grid,
-  .contact-grid {
+  .contact-grid,
+  .policy-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1588,6 +1695,10 @@ a.contact-card:hover {
 
   .product-detail-identity {
     min-height: 480px;
+  }
+
+  .policy-summary {
+    position: static;
   }
 
   .principles,
