@@ -16,4 +16,8 @@
     <loc>https://zixlab.co.uk/contact/</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://zixlab.co.uk/privacy/pharmascan/</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
