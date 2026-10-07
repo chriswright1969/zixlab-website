@@ -46,7 +46,7 @@ Future candidates discussed for the portfolio include the Zixlab flight tracker 
 ## Contact details
 
 - General: `hello@zixlab.co.uk`
-- Products: `hello@zixlabs.co.uk`
+- Products: `hello@zixlab.co.uk`
 
 ## Company information
 
