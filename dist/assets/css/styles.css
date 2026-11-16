@@ -1228,6 +1228,7 @@ button {
 .store-row {
   display: flex;
   margin-top: 34px;
+  align-items: center;
   flex-wrap: wrap;
   gap: 12px;
 }
